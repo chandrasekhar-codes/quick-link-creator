@@ -98,8 +98,10 @@ function Index() {
       setRenderError(tooLong ? "This content is too long to fit in a QR code." : null);
       return;
     }
+    console.log("qr effect", payload.length, size, level);
     (async () => {
       try {
+
         const [pngData, svgData] = await Promise.all([
           toPngDataUrl(payload, size, level),
           toSvgString(payload, size, level),
