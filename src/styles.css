@@ -154,6 +154,28 @@
 
   body {
     background-color: var(--color-background);
+    background-image: var(--gradient-hero);
+    background-attachment: fixed;
     color: var(--color-foreground);
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
   }
 }
+
+@utility panel {
+  background-color: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-2xl);
+  box-shadow: var(--shadow-panel);
+}
+
+@utility glow {
+  box-shadow: var(--shadow-glow);
+}
+
