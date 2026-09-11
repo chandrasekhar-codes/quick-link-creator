@@ -363,10 +363,20 @@ function Index() {
                       {fileResult.kind === "embedded" ? "Embedded" : "Hosted link"}
                     </span>
                     {fileResult.kind === "hosted" && (
-                      <p className="mt-3 break-all text-xs text-muted-foreground">
-                        {fileResult.data}
-                      </p>
+                      <Button
+                        type="button"
+                        variant="outline"
+                        size="sm"
+                        className="ml-2"
+                        onClick={async () => {
+                          await navigator.clipboard.writeText(fileResult.data);
+                          toast.success("Share link copied");
+                        }}
+                      >
+                        <Copy className="h-3.5 w-3.5" /> Copy link
+                      </Button>
                     )}
+
                   </div>
                 )}
               </div>
