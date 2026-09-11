@@ -108,7 +108,8 @@ function Index() {
         setPng(pngData);
         setSvg(svgData);
         setRenderError(null);
-      } catch {
+      } catch (e) {
+        console.error("qr render failed", e);
         if (active) setRenderError("Could not build a QR code from this content.");
       }
     })();
