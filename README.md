@@ -48,6 +48,8 @@ Tech stack: Plain HTML/CSS/JS (or React) — no heavy frameworks needed for this
 
 This project was built with [Lovable](https://lovable.dev).
 
+Live Link: https://genie-qr.lovable.app
+
 ## Build with Lovable
 
 Continue developing this project in the [Lovable editor](https://lovable.dev/projects/35cddeeb-2f20-4c9c-a88e-f5bc291e1aab).
